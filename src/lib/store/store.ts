@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "./features/myCartSlice";
 
-const persistanceLocalStorageMiddleware = (store) => (next) => (action) => {
+const persistanceLocalStorageMiddleware = (store: any) => (next: any) => (action: any) => {
   next(action);
 
   localStorage.setItem("__redux__state", JSON.stringify(store.getState()));
