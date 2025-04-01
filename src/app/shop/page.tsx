@@ -13,9 +13,18 @@ import { useSearchParams } from "next/navigation";
 function ShopPage() {
   const filterCategory = categoriesForFilter(Categories);
   const [filters, setFilters] = useState(filterCategory);
-  const filterParams = useSearchParams();
-  const filterParamsValue = filterParams.get('category');
+  const [filterParamsValue, setFilterParamsValue] = useState<string | null>(null);
 
+  // Usamos useEffect para obtener el valor de los parámetros solo en el cliente
+  useEffect(() => {
+    const filterParams = useSearchParams();
+    const categoryFromParams = filterParams.get('category');
+    if (categoryFromParams) {
+      setFilterParamsValue(categoryFromParams);
+    }
+  }, []); // Solo se ejecuta una vez, cuando el componente se monta
+
+  // Si hay un valor en filterParamsValue, lo aplicamos a los filtros
   useEffect(() => {
     if (filterParamsValue) {
       setFilters(prevFilters => ({
@@ -25,6 +34,7 @@ function ShopPage() {
     }
   }, [filterParamsValue]);
 
+  // Filtramos las prendas en base a los filtros
   const filteredClothes: ClothingItem[] = filterClothesByCategories(Clothes as ClothingItem[], filters);
 
   const handleCheckboxChange = (categoryName: string) => {
@@ -64,7 +74,7 @@ function ShopPage() {
       </div>
       <RenderShopClothes clothes={filteredClothes}/>
     </section>
-  )
+  );
 }
 
 export default ShopPage;
