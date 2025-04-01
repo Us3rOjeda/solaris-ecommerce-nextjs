@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn-custom {
+    @apply absolute bottom-10 left-1/2 transform -translate-x-1/2 backdrop-blur-xl w-36 h-12 text-xl border-2 border-white;
+  }
+  .btn-custom-no-absolute {
+    @apply backdrop-blur-xl w-36 h-12 text-xl border-2 border-white;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

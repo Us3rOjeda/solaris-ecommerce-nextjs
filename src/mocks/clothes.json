@@ -1,0 +1,74 @@
+[
+  {
+    "id": "d81a5243-ebf1-11ef-a1bd-cecd02c24f20",
+    "name": "Bodysuit-[01]",
+    "category": "bodysuit",
+    "price": "74.96",
+    "frontImg": "/clothes-images/bodysuit01-front.jpg",
+    "backImg": "/clothes-images/bodysuit01-back.jpg",
+    "isNew": 1
+  },
+  {
+    "id": "d81a56c6-ebf1-11ef-a1bd-cecd02c24f20",
+    "name": "Bodysuit-[02]",
+    "category": "bodysuit",
+    "price": "69.96",
+    "frontImg": "/clothes-images/bodysuit02-front.jpg",
+    "backImg": "/clothes-images/bodysuit02-back.jpg",
+    "isNew": 1
+  },
+  {
+    "id": "d81a582e-ebf1-11ef-a1bd-cecd02c24f20",
+    "name": "Bodysuit-[03]",
+    "category": "bodysuit",
+    "price": "79.96",
+    "frontImg": "/clothes-images/bodysuit03-front.jpg",
+    "backImg": "/clothes-images/bodysuit03-back.jpg",
+    "isNew": 1
+  },
+  {
+    "id": "d81a58af-ebf1-11ef-a1bd-cecd02c24f20",
+    "name": "Shoes-[01]",
+    "category": "shoes",
+    "price": "89.96",
+    "frontImg": "/clothes-images/shoes01-front.jpg",
+    "backImg": "/clothes-images/shoes01-back.jpg",
+    "isNew": 0
+  },
+  {
+    "id": "d81a5921-ebf1-11ef-a1bd-cecd02c24f20",
+    "name": "Shoes-[02]",
+    "category": "shoes",
+    "price": "84.96",
+    "frontImg": "/clothes-images/shoes02-front.jpg",
+    "backImg": "/clothes-images/shoes02-back.jpg",
+    "isNew": 0
+  },
+  {
+    "id": "d81a598a-ebf1-11ef-a1bd-cecd02c24f20",
+    "name": "Jacket-[01]",
+    "category": "top",
+    "price": "129.96",
+    "frontImg": "/clothes-images/top01-front.jpg",
+    "backImg": "/clothes-images/top01-back.jpg",
+    "isNew": 0
+  },
+  {
+    "id": "d81a5a3e-ebf1-11ef-a1bd-cecd02c24f20",
+    "name": "Jacket-[02]",
+    "category": "top",
+    "price": "99.96",
+    "frontImg": "/clothes-images/top02-front.jpg",
+    "backImg": "/clothes-images/top02-back.jpg",
+    "isNew": 0
+  },
+  {
+    "id": "d81a5b17-ebf1-11ef-a1bd-cecd02c24f20",
+    "name": "Pants-[01]",
+    "category": "bottom",
+    "price": "89.96",
+    "frontImg": "/clothes-images/pants01-front.jpg",
+    "backImg": "/clothes-images/pants01-back.jpg",
+    "isNew": 0
+  }
+]

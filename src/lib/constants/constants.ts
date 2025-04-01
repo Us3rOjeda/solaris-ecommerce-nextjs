@@ -1,0 +1,1 @@
+export const NAV_OPTIONS: string[] = ['home', 'shop', 'news'];
