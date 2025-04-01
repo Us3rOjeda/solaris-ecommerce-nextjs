@@ -6,6 +6,7 @@ import Image from "next/image";
 import AddToCartBtn from "@/components/item-page/AddToCartBtn";
 import StoreProvider from "@/lib/services/StoreProvider";
 import { ClothingItem } from "@/lib/types/types";
+import { Suspense } from "react";
 
 function ItemPage() {
   const item = getItemById() as ClothingItem;
@@ -63,5 +64,13 @@ function ItemPage() {
   )
 }
 
-export default ItemPage;
+function SuspendedItemPage() {
+  return (
+    <Suspense fallback={<div>Loading item...</div>}>
+      <ItemPage />
+    </Suspense>
+  );
+}
+
+export default SuspendedItemPage;
 
