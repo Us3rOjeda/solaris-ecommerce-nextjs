@@ -20,7 +20,7 @@ function Home() {
       >
         <h1 
           id='home' 
-          className='text-6xl flex font-extrabold text-white text-center select-none z-10
+          className='text-6xl flex font-extrabold text-white text-center select-none z-9
           xl:absolute xl:text-8xl xl:text-left xl:bottom-95 xl:mx-20'
         >
           UNLOCK YOUR <br className="hidden xl:inline"/>STYLE'S <br className="inline xl:hidden"/>POTENTIAL.
@@ -29,7 +29,7 @@ function Home() {
         <button
           id='home-btn' 
           className='absolute bottom-20 left-1/2 -translate-x-1/2 items-center 
-          hover:scale-95 transition-transform duration-300 ease-in-out transform z-10
+          hover:scale-95 transition-transform duration-300 ease-in-out transform z-9
           xl:bottom-4'
         >
           <Link 

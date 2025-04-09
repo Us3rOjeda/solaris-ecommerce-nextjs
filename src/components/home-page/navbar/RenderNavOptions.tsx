@@ -18,8 +18,17 @@ function RenderNavOptions({ ulClasses, liClasses, linkClasses, spanClasses }: Re
         </li>
         ))
       }  
+      {
+        <li className={`lg:hidden ${liClasses}`}>
+          <Link 
+            href='/cart'
+            className={`${linkClasses}`}>
+              Cart
+          </Link>
+        </li>
+      }
     </ul>
   )
 }
 
-export default RenderNavOptions
+export default RenderNavOptions 
